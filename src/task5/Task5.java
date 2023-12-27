@@ -16,7 +16,7 @@ public class Task5 {
                     sum += i;
                 }
                 System.out.println("Sum = " + sum);
-                break;
+                return;
             }
         }
         scanner.close();
