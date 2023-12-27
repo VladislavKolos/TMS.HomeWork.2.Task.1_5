@@ -2,11 +2,11 @@ package task5;
 
 import java.util.Scanner;
 
-public class Task5 {
+public class Task5Version2 {
     public static void main(String[] args) {
         System.out.println("Enter number");
         Scanner scanner = new Scanner(System.in);
-        if (scanner.hasNextInt()) {
+        while (scanner.hasNextInt()) {
             int userNumber = scanner.nextInt();
             if (userNumber <= 0) {
                 System.out.println("re-Enter");
@@ -16,10 +16,10 @@ public class Task5 {
                     sum += i;
                 }
                 System.out.println("Sum = " + sum);
+                scanner.close();
+                return;
             }
-        } else {
-            System.out.println("re-Enter");
         }
-        scanner.close();
     }
 }
+
